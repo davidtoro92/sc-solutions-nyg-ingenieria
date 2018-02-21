@@ -49,6 +49,9 @@ h6 {
 section {
     padding: 8rem 0
 }
+.servicios{
+    background-color: rgba(148, 148, 153, .3);
+}
 .section-heading {
     margin-top: 0
 }
@@ -61,6 +64,18 @@ section {
     color: #fff;
     background: #212529;
     text-shadow: none
+}
+.round_image {
+    border-radius: 50%;
+    background-color: white;
+}
+.round_image_left{
+    height: 100px;
+    width: 100px;
+    text-align: left;
+}
+.round_image_left_div{
+    text-align: left;
 }
 img::selection {
     color: #fff;
@@ -114,10 +129,11 @@ body {
 @media (min-width: 992px) {
     #mainNav {
         border-color: transparent;
-        background-color: transparent
+        /*background-color: transparent;*/
+        background-color: #73777A;
     }
     #mainNav .navbar-brand {
-        color: #40A9D7; /*color nombre portada izquierda*/
+        color: #47ACDD; /*color nombre portada izquierda*/
     }
     #mainNav .navbar-brand:focus,
     #mainNav .navbar-brand:hover {
@@ -128,7 +144,7 @@ body {
     }
     #mainNav .navbar-nav>li.nav-item>a.nav-link,
     #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
-        color: #40A9D7; /*color de botones derecha arriba menu*/
+        color: #47ACDD; /*color de botones derecha arriba menu*/
     }
     #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,
     #mainNav .navbar-nav>li.nav-item>a.nav-link:hover {
@@ -168,15 +184,14 @@ body {
 header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 56px);
-    /*background-image: url(../img/logo_ng_montajes.png);*/
-    background-color: rgba(148, 148, 153, .4);
+    background-color: rgba(148, 148, 153, .3);
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover
 
-    position: relative;
+    /*position: relative;*/
     background-size: cover;
     height: 20em;
 }
@@ -193,6 +208,7 @@ header.masthead p {
 @media (max-width: 991px) {
     header.masthead {
         background-image: url(../img/logo_ng_montajes_small.png);
+        padding-bottom: 300px;
     }
 }
 @media (min-width: 768px) {
@@ -299,7 +315,7 @@ header.masthead p {
 .btn-primary:focus,
 .btn-primary:hover {
     color: #fff;
-    background-color: #ee4b28!important
+    background-color: #73777A!important
 }
 .btn-primary:active,
 .btn-primary:focus {
