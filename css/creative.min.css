@@ -214,6 +214,8 @@ header.masthead p {
 }
 @media (max-width: 991px) {
     header.masthead {
+        height: 80vh;
+        width: 80vh;
         background-image: url(../img/logo_ng_montajes_small.png);
         padding-bottom: 300px;
     }
