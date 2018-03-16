@@ -212,12 +212,18 @@ header.masthead h1 {
 header.masthead p {
     font-weight: 300
 }
-@media (max-width: 991px) {
+@media (min-width: 990px) {
     header.masthead {
-        height: 80vh;
-        width: 80vh;
+        height: 100%;
+        width: 100%;
         background-image: url(../img/logo_ng_montajes_small.png);
         padding-bottom: 300px;
+    }
+    header.masthead img {
+        visibility: hidden;
+    }
+    header.masthead div {
+        visibility: hidden;
     }
 }
 @media (min-width: 768px) {
@@ -225,7 +231,30 @@ header.masthead p {
         font-size: 1.15rem;
     }
 }
-@media (min-width: 992px) {
+
+@media (max-width: 990px) {
+    header.masthead {
+        height: 700px;
+    }
+}
+@media (min-width: 990px) {
+    #contentImgRes {
+        display: none;
+    }
+}  
+/*@media (min-width: 992px) {
+    header.masthead {
+        height: 100vh;
+        min-height: 650px;
+        background-image: url(../img/logo_ng_montajes.png);
+        padding-top: 0;
+        padding-bottom: 0
+    }
+    header.masthead h1 {
+        font-size: 3rem
+    }
+}*/
+@media (min-width: 1310px) {
     header.masthead {
         height: 100vh;
         min-height: 650px;
@@ -239,7 +268,7 @@ header.masthead p {
 }
 @media (min-width: 1200px) {
     header.masthead h1 {
-        font-size: 4rem
+        font-size: 4rem;
         background-image: url(../img/logo_ng_montajes.png);
     }
 }
