@@ -234,7 +234,7 @@ header.masthead p {
 
 @media (max-width: 990px) {
     header.masthead {
-        height: 700px;
+        height: 600px;
     }
 }
 @media (min-width: 990px) {
